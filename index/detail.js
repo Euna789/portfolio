@@ -5,7 +5,7 @@ let constId="1";
 
 function paintContent(detail,Id){
     var repeat=Id[0];
-    for (i=1;i<repeat;i++){
+    for (i=1;i<=repeat;i++){
         const img=document.createElement("img");
         img.src="../images/"+Id+"/"+i+".png";
         img.width="230";
