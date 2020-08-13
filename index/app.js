@@ -1,21 +1,29 @@
-// var intRandom=0;
-// function image_onclick(){
-//     var arrImage=new Array("../images/1.png","../images/2.png","../images/3.png");
-//     var imgSource=document.targetImg;
-//     if (intRandom!==2){
-//         intRandom++;
-//     } else {
-//         intRandom=0;
-//     }
-//     imgSource.src=arrImage[intRandom];
-// }
+const menu=document.getElementsByClassName("menu"),
+menuImg=document.getElementsByClassName("menuImg");
 
-const imgBtn=document.querySelector(".menus__img");
-
-function paintMenuImg(folderName){
-    const img=document.createElement("img");
-    img.setAttribute("src","../images/"+folderName+"/"+1+".png");
-    imgBtn.appendChild(img);
+function handleImageOver(event){
+    event.preventDefault();
+    getId = event.target.id;
+    currentSrc = event.target.src;
+    const img = document.getElementById(getId);
+    img.classList.add("fade");
+    img.src = currentSrc.slice(0,-4) + '2.png';
 }
 
-paintMenuImg("sinchon_0710");
+function handleImageOut(event){
+    event.preventDefault();
+    getId = event.target.id;
+    currentSrc = event.target.src;
+    const img = document.getElementById(getId);
+    img.classList.remove("fade");
+    img.src = currentSrc.slice(0,-5) + '.png';
+}
+
+if(menuImg){
+    Array.from(menuImg).forEach(img=>
+        img.addEventListener("mouseover",handleImageOver)
+    );
+    Array.from(menuImg).forEach(img=>
+        img.addEventListener("mouseleave",handleImageOut)
+    );
+}
