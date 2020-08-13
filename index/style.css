@@ -9,6 +9,47 @@ body{
     padding: 50px 0px; /*위 아래 여백 50px씩*/
 }
 
+a{
+    text-decoration:none;
+    color: #505050;
+}
+
+.header{
+    display: flex;
+    flex-direction:row;
+    align-items: left;
+    text-align: justify;
+    margin-bottom:30px;
+}
+.js-clock{
+    margin: 0px 0px;
+    font-size:60px;
+    font-family: "Georgia";
+}
+
+h1{
+    margin-top:30px;
+}
+
+hr{
+    background-color: #dcdcdc;
+    border-width: 1px;
+    border-bottom: 0px;
+    margin-top:50px;
+    margin-bottom:50px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.block{
+    background-color : white;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.menus{
+    margin-bottom:30px;
+}
+
 .menus .menu{
     text-align : center;
     margin : 5px;

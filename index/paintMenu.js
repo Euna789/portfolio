@@ -18,6 +18,15 @@ function paintMenuImg(folderName){
     imgBtn.appendChild(li);
 }
 
-paintMenuImg("sinchon_0710");
-paintMenuImg("sinchon_0724");
-paintMenuImg("sinchon_0717");
+switch(imgBtn.id){
+    case "cardnews":
+        paintMenuImg("sinchon_0710");
+        paintMenuImg("sinchon_0724");
+        paintMenuImg("sinchon_0717");
+        break;
+    case "game":
+        paintMenuImg("returnOfBullet");
+}
+
+
+
