@@ -7,10 +7,10 @@ function paintContent(detail,Id){
     var repeat=Id[0];
     for (i=1;i<=repeat;i++){
         const img=document.createElement("img");
-        img.src="../images/"+Id+"/"+i+".png";
+        img.src=`../images/${Id}/${i}.png`;
         img.width="230";
         img.className="img";
-        console.log(img);
+        img.classList.add("detailImg");
         detail.appendChild(img);
     }
 }
@@ -30,20 +30,17 @@ function showContent(Id){
         paintContent(detail,Id);
         detail.style.display='block';
         showing=true;
-        console.log(constId,Id);
 
     }
     else if(showing===true && constId === Id){
         detail.style.display='none';
         showing=false;
-        console.log(constId,Id);
     }
     else{
         //detail.innerText=Id;
         showing=true;
         paintContent(detail,Id);
         constId=Id;
-        console.log(constId,Id);
 
     }
 }
