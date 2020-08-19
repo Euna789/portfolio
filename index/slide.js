@@ -32,6 +32,7 @@ var nextBtn = document.querySelector('.next');
 var prevBtn = document.querySelector('.prev');
 
 nextBtn.addEventListener('click', function () {
+    console.log("btn")
     plusSlides(1);
 });
 prevBtn.addEventListener('click', function () {

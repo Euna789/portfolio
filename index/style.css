@@ -78,6 +78,12 @@ hr{
     background-color:#3a3a3a;
 }
 
+.description{
+    padding: 20px 0px 40px 0px;
+    background-color:#3a3a3a;
+    display:none;
+}
+
 #detail{
     display:none;
 }

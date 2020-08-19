@@ -28,6 +28,7 @@ switch(imgBtn.id){
         break;
     case "game":
         paintMenuImg("returnOfBullet");
+        paintMenuImg("Catizard");
 }
 
 
