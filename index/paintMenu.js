@@ -29,7 +29,9 @@ switch(imgBtn.id){
     case "game":
         paintMenuImg("returnOfBullet");
         paintMenuImg("Catizard");
+    case "web":
+        paintMenuImg("tooneview");
+    case "chatbot":
+        paintMenuImg("pibot");
+
 }
-
-
-
